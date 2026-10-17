@@ -19,8 +19,7 @@ Typical output includes:
 
 2) Preview locally (interactive)
 - `tsci dev`
-- Opens a local preview server (commonly https://localhost:3020)
-- Note: For AI-driven iteration, prefer `tsci build` over `tsci dev`—dev mode is primarily for interactive visual feedback.
+- Open the URL reported by the server in the app's side preview/browser panel and keep it visible during iteration; follow `SKILL.md`.
 
 3) Search the ecosystem
 - `tsci search "<query>"`

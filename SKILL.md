@@ -54,6 +54,7 @@ When this Skill is active:
 - Use `<trace />` for connectivity; prefer net connections (`net.GND`, `net.VCC`, etc.) for power/ground.
 
 5) Build and iterate
+- Start `tsci dev` (or reuse the project's running dev server) and open its reported URL in the app's side preview/browser panel. Keep the preview visible while iterating; in Codex, use `open_in_codex` with a browser target and `placement: "right"`. If an embedded preview is unavailable, share the preview URL.
 - Use `tsci check source [file]` for source diagnostics and `tsci check pin_specification [file]` for pin requirements before layout.
 - Run `tsci check netlist` before `tsci check schematic-placement`, `tsci check placement`, and `tsci build` to catch connectivity issues early.
 - Use `tsci check schematic-placement` to validate schematic-side placement before checking PCB placement.
@@ -73,7 +74,6 @@ When this Skill is active:
 - The default shorts check analyzes Gerber-derived copper on all available copper layers. Use `--mode pcb` for PCB geometry, `--layer top` or `--layer bottom` to narrow the scope, and `--pixels-per-mm <number>` only when a different bitmap resolution is needed.
 - DRC (Design Rule Check) errors can often be ignored during development—focus on getting the circuit correct first.
 - If routing struggles, reduce density, use `<group />` for sub-layouts, or change autorouter settings.
-- Use `tsci dev` only when you need interactive visual feedback (not typical for AI-driven iteration).
 
 6) Validate and export
 - Run `tsci check netlist` before `tsci check schematic-placement`, `tsci check placement`, and `tsci build` when preparing to share/publish.
