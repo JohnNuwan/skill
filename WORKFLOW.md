@@ -84,7 +84,7 @@
 - Run `tsci check routing-difficulty` after placement to identify potential areas of congestion.
 - Then address routing issues. After routing, run `tsci check shorts` for unintended copper connections and `tsci check pcb-style` for odd-angle runs and stair stepping; inspect their artifacts and fix the reported copper.
 - Use `tsci check trace-length <pinOrNetRef> [file]` to inspect lengths for a specific pin or net; the target is required.
-- Keep `tsci dev` open beside the chat throughout iteration; follow the side-preview instructions in `SKILL.md`.
+- Keep the `tsci dev` preview visible alongside the work during iteration; follow `SKILL.md`.
 
 ## 8) Stabilize and regression-test
 
