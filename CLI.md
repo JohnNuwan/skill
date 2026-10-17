@@ -19,7 +19,7 @@ Typical output includes:
 
 2) Preview locally (interactive)
 - `tsci dev`
-- Open the URL reported by the server alongside the work during iteration; follow the preview guidance in `SKILL.md`.
+- Starts a local preview server.
 
 3) Search the ecosystem
 - `tsci search "<query>"`

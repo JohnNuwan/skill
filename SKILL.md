@@ -54,7 +54,7 @@ When this Skill is active:
 - Use `<trace />` for connectivity; prefer net connections (`net.GND`, `net.VCC`, etc.) for power/ground.
 
 5) Build and iterate
-- Start `tsci dev` (or reuse the project's running dev server) and open its reported URL in a side-by-side preview when available. Keep the preview visible while iterating; otherwise, share the preview URL.
+- Start or reuse `tsci dev` and open its reported URL in a side-by-side preview when available; otherwise, share the URL.
 - Use `tsci check source [file]` for source diagnostics and `tsci check pin_specification [file]` for pin requirements before layout.
 - Run `tsci check netlist` before `tsci check schematic-placement`, `tsci check placement`, and `tsci build` to catch connectivity issues early.
 - Use `tsci check schematic-placement` to validate schematic-side placement before checking PCB placement.
